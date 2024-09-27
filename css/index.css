@@ -21,7 +21,9 @@ body {
 section {
     width: 100%;
     padding: 5em 3.5%;
-    color: white;
+    color: brown;
+
+
 }
 
 html {
@@ -129,3 +131,43 @@ body.light header .toggle-switchmode .moon {
     border-radius: 10px;
     object-fit: cover;
 }
+/* Main container */
+#whyUs {
+    background-color: #EACDC2;
+    color: #000;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Content styling */
+.whyUs-content {
+    max-width: 600px;
+}
+
+#whyUs h1 {
+    font-family: 'Glass Antiqua', serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#whyUs h3 {
+    font-family: 'Glass Antiqua', serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#whyUs p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+.feature {
+    margin-bottom: 20px;
+}
+
+
