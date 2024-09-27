@@ -1,0 +1,19 @@
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    padding: 30px 100px 30px 100px;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
