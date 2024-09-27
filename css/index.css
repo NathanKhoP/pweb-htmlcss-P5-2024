@@ -172,7 +172,7 @@ body.light header .toggle-switchmode .moon {
     margin-bottom: 20px;
 }
 
-/* Image styling */
+
 .why-img {
     width: 400px;  /* Adjust size */
     height: auto;  /* Maintain aspect ratio */
@@ -182,4 +182,78 @@ body.light header .toggle-switchmode .moon {
     flex-shrink: 0;  /* Prevent image from shrinking */
 }
 
+
+#gallery {
+    background-color: #1B1B1B;  
+    color: #fff;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    padding: 50px;
+    text-align: center;
+}
+
+
+#gallery h1 {
+    font-family: 'Glass Antiqua', serif;
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #EACDC2;  
+}
+
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1000px;
+}
+
+.gallery-item {
+    flex: 1;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+}
+
+.gallery-item h3 {
+    font-family: 'Glass Antiqua', serif;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #C08C8C;  
+}
+
+.gallery-item p {
+    font-size: 16px;
+    color: #C0C0C0;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+
+.btn-gallery {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 30px;
+    background-color: #EACDC2;
+    color: #1B1B1B;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-gallery:hover {
+    background-color: #C08C8C;
+    color: #fff;
+}
 
