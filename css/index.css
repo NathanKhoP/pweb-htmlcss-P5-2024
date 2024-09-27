@@ -1,0 +1,131 @@
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    /* font-family: "Schibsted Grotesk", sans-serif; */
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    padding: 5em 3.5%;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.light {
+    background: #ffffff;
+}
+body.light header .toggle-switchmode .sun {
+    display: none;
+}
+body.light header .toggle-switchmode .moon {
+    color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home {
+    background-color: #B75D69; 
+    color: #fefefe; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+#home h1 {
+    font-size: 3rem;
+    font-family: 'Glass Antiqua', serif;
+    font-weight: 600;
+    color: #2e0002;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.menu-btn, .order-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.order-btn {
+    background-color: #f4e4dd;
+    color: #000;
+}
+
+.menu-btn:hover, .order-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#home::before, #home::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+#home::before {
+    width: 150px;
+    height: 150px;
+    background-color: #2e0002;
+    top: 20%;
+    left: 0;
+    transform: translateX(-50%);
+}
+
+#home::after {
+    width: 250px;
+    height: 250px;
+    background-color: #7c1b26;
+    bottom: 10%;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.image-container {
+    position: relative;
+    flex-shrink: 0;
+
+}
+
+.img1, .img2 {
+    width: 400px;
+    height: 275px;
+    border-radius: 10px;
+    object-fit: cover;
+}
