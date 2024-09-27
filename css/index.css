@@ -140,11 +140,14 @@ body.light header .toggle-switchmode .moon {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 /* Content styling */
 .whyUs-content {
     max-width: 600px;
+    flex: 1;  /* Allow the content to take up available space */
 }
 
 #whyUs h1 {
@@ -165,9 +168,18 @@ body.light header .toggle-switchmode .moon {
     line-height: 1.6;
 }
 
-
 .feature {
     margin-bottom: 20px;
+}
+
+/* Image styling */
+.why-img {
+    width: 400px;  /* Adjust size */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 20px;  /* Rounded corners */
+    object-fit: cover;  /* Ensures the image fits */
+    margin-left: 20px;  /* Space between text and image */
+    flex-shrink: 0;  /* Prevent image from shrinking */
 }
 
 
