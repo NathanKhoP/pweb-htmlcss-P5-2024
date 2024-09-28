@@ -316,6 +316,38 @@ body.light header .toggle-switchmode .moon {
     color: #EACDC2;
 }
 
+#contact {
+    background-color: #1B1B1B;
+    color: #EACDC2;
+    text-align: center;
+}
+
+.contact-content h1 {
+    font-family: 'Glass Antiqua', serif;
+    font-size: 48px;
+}
+
+.contact-content p {
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.btn-contact {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #a26d86;
+    color: #fff;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #774c55;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .testimonials-content {
