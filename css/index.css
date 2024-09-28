@@ -182,7 +182,7 @@ body.light header .toggle-switchmode .moon {
     flex-shrink: 0;  /* Prevent image from shrinking */
 }
 
-
+/* Gallery Section */
 #gallery {
     background-color: #1B1B1B;  
     color: #fff;
@@ -191,14 +191,12 @@ body.light header .toggle-switchmode .moon {
     text-align: center;
 }
 
-
 #gallery h1 {
     font-family: 'Glass Antiqua', serif;
     font-size: 48px;
     margin-bottom: 40px;
     color: #EACDC2;  
 }
-
 
 .gallery-container {
     display: flex;
@@ -211,6 +209,7 @@ body.light header .toggle-switchmode .moon {
     justify-content: space-between;
     gap: 30px;
     max-width: 1000px;
+    flex-wrap: wrap; /* Menambahkan flex-wrap agar item tidak keluar dari layar */
 }
 
 .gallery-item {
@@ -238,7 +237,7 @@ body.light header .toggle-switchmode .moon {
     line-height: 1.6;
 }
 
-
+/* Button */
 .btn-gallery {
     display: inline-block;
     margin-top: 40px;
@@ -256,6 +255,49 @@ body.light header .toggle-switchmode .moon {
     background-color: #C08C8C;
     color: #fff;
 }
+
+/* Responsiveness for Tablets and Mobiles */
+@media (max-width: 768px) {
+    #gallery h1 {
+        font-size: 36px; /* Ukuran font lebih kecil untuk layar tablet */
+    }
+
+    .gallery-content {
+        flex-direction: column; /* Mengubah item menjadi vertikal pada layar lebih kecil */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .gallery-item img {
+        max-width: 250px; /* Mengurangi lebar maksimum gambar pada tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    #gallery {
+        padding: 30px 15px; /* Mengurangi padding pada layar ponsel */
+    }
+
+    #gallery h1 {
+        font-size: 28px; /* Ukuran font lebih kecil untuk layar ponsel */
+    }
+
+    .gallery-content {
+        gap: 15px;
+    }
+
+    .gallery-item img {
+        max-width: 200px; /* Lebih kecil untuk layar ponsel */
+    }
+
+    .btn-gallery {
+        padding: 10px 20px; /* Ukuran tombol lebih kecil untuk layar ponsel */
+        font-size: 16px;
+    }
+}
+
+
+
 
 /* Main container for testimonials */
 #testimonials {
