@@ -258,6 +258,66 @@ body.light header .toggle-switchmode .moon {
 
 /* Responsiveness for Tablets and Mobiles */
 @media (max-width: 768px) {
+    #home {
+        background-color: #B75D69; 
+        color: #fefefe; 
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        font-family: 'Schibsted Grotesk', sans-serif;
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    #home::before {
+        width: 50px;
+        height: 50px;
+        background-color: #2e0002;
+        top: 20%;
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    #home::after {
+        width: 70px;
+        height: 70px;
+        background-color: #7c1b26;
+        bottom: 10%;
+        right: 0;
+        transform: translateX(100%);
+    }
+
+    .img1, .img2 {
+        width: 300px;
+        height:150px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    #whyUs {
+        background-color: #EACDC2;
+        color: #000;
+        font-family: 'Schibsted Grotesk', sans-serif;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 95vh;
+        box-sizing: border-box;
+    }
+
+    .why-img {
+        width: 100px;  /* Adjust size */
+        height: 750px;  /* Maintain aspect ratio */
+        border-radius: 20px;  /* Rounded corners */
+        object-fit: cover;  /* Ensures the image fits */
+        margin-left: 20px;  /* Space between text and image */
+        flex-shrink: 0;  /* Prevent image from shrinking */
+    }
+
     #gallery h1 {
         font-size: 36px; /* Ukuran font lebih kecil untuk layar tablet */
     }
