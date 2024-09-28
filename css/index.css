@@ -257,3 +257,71 @@ body.light header .toggle-switchmode .moon {
     color: #fff;
 }
 
+/* Main container for testimonials */
+#testimonials {
+    background-color: #1B1B1B;  /* Dark background for consistency */
+    color: #fff;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Section title */
+#testimonials h1 {
+    font-family: 'Glass Antiqua', serif;
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #EACDC2;  /* Match the theme color */
+}
+
+/* Testimonial container */
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Flexbox for the testimonials */
+.testimonials-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+    margin-top: 30px;
+}
+
+.testimonial-item {
+    flex: 1;
+    background-color: #333; /* Slightly lighter than the background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05);
+}
+
+.quote {
+    font-style: italic;
+    font-size: 18px;
+    color: #C0C0C0;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-family: 'Glass Antiqua', serif;
+    font-size: 20px;
+    color: #EACDC2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonials-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
