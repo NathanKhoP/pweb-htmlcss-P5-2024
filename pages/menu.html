@@ -129,32 +129,5 @@
             <p>&copy; 2024 Camper Cafe. All rights reserved - P5</p>
         </div>
     </footer>
-
-    <!-- JavaScript untuk Filter Menu -->
-    <script>
-        const categoryButtons = document.querySelectorAll('.category-btn');
-        const menuItems = document.querySelectorAll('.menu-item');
-
-        categoryButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Remove active class dari semua tombol
-                categoryButtons.forEach(btn => btn.classList.remove('active'));
-                // Tambahkan active class pada tombol yang diklik
-                button.classList.add('active');
-
-                const category = button.getAttribute('data-category');
-
-                menuItems.forEach(item => {
-                    if (category === 'all' || item.classList.contains(category)) {
-                        item.style.display = 'flex';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-        });
-    </script>
-
-    <script src="./js/navbar.js"></script>
 </body>
 </html>
