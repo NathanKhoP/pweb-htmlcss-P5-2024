@@ -9,7 +9,7 @@ header {
     display: flex;
     align-items: center;
     font-weight:600;
-    justify-content: space-between;
+    justify-content: flex-end;
     -webkit-backdrop-filter: blur(11px);
     backdrop-filter: blur(11px);
     padding-inline: 5%;
