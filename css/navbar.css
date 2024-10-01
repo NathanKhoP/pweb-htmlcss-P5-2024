@@ -8,11 +8,10 @@ header {
     left: 0;
     display: flex;
     align-items: center;
-    font-weight:600;
+    font-weight: 600;
     justify-content: flex-end;
     -webkit-backdrop-filter: blur(11px);
     backdrop-filter: blur(11px);
-    padding-inline: 5%;
     z-index: 1000;  
     font-family: 'Schibsted Grotesk', sans-serif;
     /* background-color: #181c14; */
